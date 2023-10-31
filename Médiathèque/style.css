@@ -1,0 +1,113 @@
+body {
+  width: 80%;
+  margin: auto;
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style de la section de liste */
+.liste {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.liste h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Style des étiquettes des menus déroulants */
+.liste label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+/* Style des menus déroulants */
+.liste select {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Style de la liste d'ouvrages */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style des cartes d'ouvrages */
+.book-card {
+  flex-basis: calc(22.22% - 20px); /* Largeur de chaque carte, 22.22% avec espacement */
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px; /* Hauteur minimale pour chaque carte */
+  justify-content: space-between; /* Aligne le contenu verticalement */
+}
+
+/* Style des images des ouvrages */
+.book-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  height: 100px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Style des titres d'ouvrages */
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Style des informations supplémentaires */
+.book-info {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+@media (max-width: 999px) {
+  main {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .liste {
+      width: 80%; 
+  }
+
+  .info {
+      width: 80%; 
+  }
+
+  .book-card {
+      flex-basis: 80%;
+      min-height: auto; 
+      width: 100%; 
+  }
+}

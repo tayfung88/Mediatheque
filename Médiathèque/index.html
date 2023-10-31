@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Médiathèque</title>
+
+    <script src="books.json"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="liste">
+            <h1>Liste d'Ouvrages</h1>
+            <label for="authorSelect">Auteur(s) :</label>
+            <select id="authorSelect">
+                <option value="">Tous les auteurs</option>
+            </select>
+            <label for="genreSelect">Genre(s) :</label>
+            <select id="genreSelect">
+                <option value="">Tous les genres</option>
+            </select>
+        </section>
+        <section class="info">
+            <div id="bookList" class="book-list"></div>
+        </section>
+    </main>
+</body>
+</html>
